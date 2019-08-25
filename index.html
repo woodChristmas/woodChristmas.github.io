@@ -195,7 +195,12 @@
 <li>不会影响member内对应的值</li>
 <li>不会影响member3内对应的值</li>
 </ol>
-<p>由此我们得知：<br>member=[1,2.0,’3.0’,[4,5]]：<br>    申请一个内存地址，存储member list<br>member2=member<br>    将member的地址给member2，member可以通过地址找到list中的值，修改member2其实就是在修改原地址内的值，也就是member内的值<br>member3=member[:]<br>    将member复制了一份，存储在一个新的地址上，与member没有任何关联</p>
+<p>由此我们得知：</p>
+<ol>
+<li><strong>member=[1,2.0,’3.0’,[4,5]]</strong><br> 申请一个内存地址，存储member list</li>
+<li><strong>member2=member</strong><br> 将member的地址给member2，member可以通过地址找到list中的值，修改member2其实就是在修改原地址内的值，也就是member内的值</li>
+<li><strong>member3=member[:]</strong><br> 将member复制了一份，存储在一个新的地址上，与member没有任何关联</li>
+</ol>
 
       
 

@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="woodChristmas">
 <meta property="og:description" content="执行如下代码： 12345678910111213141516member=[1,2.0,&amp;apos;3.0&amp;apos;,[4,5]]member2=membermember3=member[:]print(&amp;quot;member:&amp;quot;+member[2])print(&amp;quot;member2:&amp;quot;+member2[2])print(&amp;quot;member3:&amp;quot;+m">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-25T13:11:32.684Z">
+<meta property="og:updated_time" content="2019-08-25T13:15:47.494Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python中member[:]的应用（类比其他编程语言的其他情况，有待完善）">
 <meta name="twitter:description" content="执行如下代码： 12345678910111213141516member=[1,2.0,&amp;apos;3.0&amp;apos;,[4,5]]member2=membermember3=member[:]print(&amp;quot;member:&amp;quot;+member[2])print(&amp;quot;member2:&amp;quot;+member2[2])print(&amp;quot;member3:&amp;quot;+m">
@@ -197,7 +197,12 @@
 <li>不会影响member内对应的值</li>
 <li>不会影响member3内对应的值</li>
 </ol>
-<p>由此我们得知：<br>member=[1,2.0,’3.0’,[4,5]]：<br>    申请一个内存地址，存储member list<br>member2=member<br>    将member的地址给member2，member可以通过地址找到list中的值，修改member2其实就是在修改原地址内的值，也就是member内的值<br>member3=member[:]<br>    将member复制了一份，存储在一个新的地址上，与member没有任何关联</p>
+<p>由此我们得知：</p>
+<ol>
+<li><strong>member=[1,2.0,’3.0’,[4,5]]</strong><br> 申请一个内存地址，存储member list</li>
+<li><strong>member2=member</strong><br> 将member的地址给member2，member可以通过地址找到list中的值，修改member2其实就是在修改原地址内的值，也就是member内的值</li>
+<li><strong>member3=member[:]</strong><br> 将member复制了一份，存储在一个新的地址上，与member没有任何关联</li>
+</ol>
 
       
 
