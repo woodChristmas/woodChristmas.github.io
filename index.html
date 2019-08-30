@@ -203,7 +203,7 @@
 <li><p>保留区：保留区并不是一个单一的内存区域，而是对内存中受保护而禁止访问的内存区域的总称。例如，大多数操作系统中，极小的地址通常是不允许访问的，如NULL。（顺便提一下，我们编程的时候经常会遇到“段错误（segment fault）”或者“非法操作，该内存地址不能read/write”的错误信息，其中一个原因就是我们初始化了一个指针为NULL但是没有给它赋合理的值就开始使用它。）</p>
 </li>
 </ol>
-<p><img src="https://github.com/woodChristmas/woodChristmas.github.io/blob/master/blog_img/001%E5%A0%86%E6%A0%88.png?raw=true" alt="堆与栈"></p>
+<p><img src="https://raw.githubusercontent.com/woodChristmas/Bblog_img/master/001%E5%A0%86%E6%A0%88.png" alt="堆与栈"></p>
 <h2 id="一、栈"><a href="#一、栈" class="headerlink" title="一、栈"></a>一、栈</h2><p>在经典的操作系统中，栈总是向下增长的，站定由称为esp的寄存器进行定位，压栈的操作是栈顶的地址减小，弹出的操作使栈顶的地址增大。栈保存了一个函数调用所需的维护信息，常常被称为堆栈帧或者活动记录。堆栈帧一般包括如下几个方面：</p>
 <ol>
 <li>函数的返回地址和参数</li>
@@ -303,7 +303,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">In [12]: a=[1,2,3,4,5]</span><br><span class="line">In [13]: b=a</span><br><span class="line"></span><br><span class="line">In [14]: a is b</span><br><span class="line">Out[14]: True</span><br><span class="line"></span><br><span class="line">In [15]: a[0]=6</span><br><span class="line">In [16]: a</span><br><span class="line">Out[16]: [6, 2, 3, 4, 5]</span><br><span class="line"></span><br><span class="line">In [17]: a is b</span><br><span class="line">Out[17]: True</span><br><span class="line"></span><br><span class="line">In [18]: b</span><br><span class="line">Out[18]: [6, 2, 3, 4, 5]</span><br></pre></td></tr></table></figure>
 
 <p>由此可见，容器对象中包含的并不是元素本身，而是指向各个元素对象的引用。</p>
-<p><img src="https://github.com/woodChristmas/woodChristmas.github.io/blob/master/blog_img/002%E5%AE%B9%E5%99%A8%E5%AF%B9%E8%B1%A1.png?raw=true" alt="容器对象"></p>
+<p><img src="https://raw.githubusercontent.com/woodChristmas/Bblog_img/master/002%E5%AE%B9%E5%99%A8%E5%AF%B9%E8%B1%A1.png" alt="容器对象"></p>
 <ol>
 <li>引用计数增加</li>
 </ol>
