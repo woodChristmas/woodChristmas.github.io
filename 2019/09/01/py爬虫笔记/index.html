@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>woodChristmas</title>
+  <title>py爬虫笔记 | woodChristmas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="woodChristmas">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="一、URLURL是统一资源定位符，对可以从互联网上得到的资源的位置和访问方法的一种简洁表示，是互联网上标准资源的地址。互联网上的每个文件都有一个唯一的URL，它包含的信息指出该文件的位置以及浏览器应该怎么处理它。 （一）URL的一般格式（[]内为可选项）protocol://hostname[:port]/path/[;parameters][?query]#fragment 注：protocol">
+<meta property="og:type" content="article">
+<meta property="og:title" content="py爬虫笔记">
+<meta property="og:url" content="http://yoursite.com/2019/09/01/py爬虫笔记/index.html">
 <meta property="og:site_name" content="woodChristmas">
+<meta property="og:description" content="一、URLURL是统一资源定位符，对可以从互联网上得到的资源的位置和访问方法的一种简洁表示，是互联网上标准资源的地址。互联网上的每个文件都有一个唯一的URL，它包含的信息指出该文件的位置以及浏览器应该怎么处理它。 （一）URL的一般格式（[]内为可选项）protocol://hostname[:port]/path/[;parameters][?query]#fragment 注：protocol">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-09-05T13:20:05.045Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="woodChristmas">
+<meta name="twitter:title" content="py爬虫笔记">
+<meta name="twitter:description" content="一、URLURL是统一资源定位符，对可以从互联网上得到的资源的位置和访问方法的一种简洁表示，是互联网上标准资源的地址。互联网上的每个文件都有一个唯一的URL，它包含的信息指出该文件的位置以及浏览器应该怎么处理它。 （一）URL的一般格式（[]内为可选项）protocol://hostname[:port]/path/[;parameters][?query]#fragment 注：protocol">
   
     <link rel="alternative" href="/atom.xml" title="woodChristmas" type="application/atom+xml">
   
@@ -154,164 +158,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-ASCII-GBK-unicode-UTF" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-py爬虫笔记" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/04/ASCII-GBK-unicode-UTF/">ASCII GBK unicode UTF</a>
-    </h1>
-  
-
-        
-        <a href="/2019/09/04/ASCII-GBK-unicode-UTF/" class="archive-article-date">
-  	<time datetime="2019-09-04T15:07:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<h1 id="一、基本概念"><a href="#一、基本概念" class="headerlink" title="一、基本概念"></a>一、基本概念</h1><h2 id="（一）字符"><a href="#（一）字符" class="headerlink" title="（一）字符"></a>（一）字符</h2><p>文字和符号的总称，包括各个国家的文字、标点符号、图形符号、数字等等。</p>
-<h2 id="（二）字符集"><a href="#（二）字符集" class="headerlink" title="（二）字符集"></a>（二）字符集</h2><p>多个字符的集合。字符集种类很多，每个字符集包含的字符个数也不相同，常见的字符集有：ASCII字符集、unicode字符集、GB2312字符集、ISO-8859-1字符集等。</p>
-<h2 id="（三）字符编码"><a href="#（三）字符编码" class="headerlink" title="（三）字符编码"></a>（三）字符编码</h2><p>由于计算机只能识别二进制的0和1。计算机无法直接识别字符集中的字符，所以需要将字符集转化为计算机可以识别的二进制，这个转换过程就是编码，而字符编码就是将二进制的数与字符集中的字符对应起来的一套规则。</p>
-<p>一般来说，每种字符集都有相应的一种字符编码规则，如ASCII码、GB2312字符集等都只有一种编码方式。<br>但有的字符集有多种编码方式，如unicode字符集有utf-8、utf-16、utf-32等多种字符编码。</p>
-<p><strong>每一种字符集都有一种对应的编码规范，如ASCII字符集就对应ASCII编码这种编码规范、GB2312字符集就有GB2312编码这种编码规范，而unicode字符集有多种编码规范。</strong></p>
-<h1 id="二、ASCII码"><a href="#二、ASCII码" class="headerlink" title="二、ASCII码"></a>二、ASCII码</h1><ol>
-<li>标准的单字节编码方案，适用于所有的拉丁文字字母（英语，汉语拼音，法语，等等）；</li>
-<li>计算机的每个晶体管有开关两种状态，这就构成了计算机最小的存储单位：位（bit，比特），也就是说，一个晶体管（开或关）存储1比特/bit/位；</li>
-<li>七个晶体管就有2^7=128种状态，每种状态（由七个晶体管的组成的状态）保存1字节/byte，这就构成了“标准7位ASCII码”；</li>
-<li>128种状态足够用来保存美国所有的文化符号（大写字母26个，小写字母26个，0-9阿拉伯数字，所有的英文标点符号，数学运算符号，其他特殊符号以及控制码）；</li>
-<li>ASCII码中编号0-31位非打印字符，用于控制字符的换行、回车、删除等，也统称为控制符，无法进行输出打印；32-127是打印字符，可以通过键盘输入并显示出来。</li>
-<li>后来，更多国家开始使用计算机，7个晶体管、128种状态不够用，扩展使用8个晶体管，组合成2^8=256种状态，这就是“扩展ASCII码”。当ASCII码的第一位是0的时候，仍然表示7位ASCII码的字符，当第一位是1的时候，就表示新补充的字符；</li>
-<li>编号128-255的被称为“扩展ASCII码”。</li>
-<li>ASCII码用8位代表一个字节（如小写字母a在ASCII码中排第97个，对应的二进制编码是0110 0001），每个字节存储一个字符，也就是上边所说的单字节编码，即一个字符只占一个字节的长度。</li>
-</ol>
-<p><strong>因此，新建一个txt文件，输入ABC123，以ASCII方式编码保存，它所占的大小就是6字节/byte。</strong></p>
-<h1 id="三、中文字符集（以GBK为代表）"><a href="#三、中文字符集（以GBK为代表）" class="headerlink" title="三、中文字符集（以GBK为代表）"></a>三、中文字符集（以GBK为代表）</h1><p>用16个晶体管用来存储一个汉字，双字节编码。</p>
-<h2 id="（一）GB2312字符集"><a href="#（一）GB2312字符集" class="headerlink" title="（一）GB2312字符集"></a>（一）GB2312字符集</h2><ol>
-<li>GB2312字符集保留了前128个（0-127）ASCII码的字符，而把编号在127之后的符号全部去掉；</li>
-<li>规定：编号小于127的字符的意义与原来相同，但两个大于127的字符连在一起时，就表示一个汉子，这就是“GB2312字符集”；</li>
-<li>ASCII码是单字节编码，一个字符占一个字节长度。<br>因此，在GB2312中，前128个字符是单字节的，编号在127之后的GB2312编码是双子节的，也就是一个字符占2个字节。</li>
-<li>GB2312支持6763个字符；</li>
-<li>GB2312 字符集，除汉字外还把数学符号、罗马字母、希腊字母、日文假名都编进去了。此外，还将ASCII里本来就有的大小写英文字母、阿拉伯数字、标点符号重新编写了一套两个字节长的编码，这就是“全角”字符。而原来在127号以下的那些就叫“半角”字符了。<br>全角和半角只针对字母、数字和标点而言，对于中文字无所谓全角和半角之分。全角字符是双字节编码，半角字符是单字节编码，因此长度上不同。如：  <pre><code>ａｂｃｄｅｆｇ１２３４５６７８９，／．  
-abcdefg123456789,/.</code></pre></li>
-</ol>
-<h2 id="（二）GBK字符集"><a href="#（二）GBK字符集" class="headerlink" title="（二）GBK字符集"></a>（二）GBK字符集</h2><p>GBK包含了GB2312的所有内容，同时又增加了近20000个新的汉子（包括繁体字）和符号。</p>
-<h2 id="（三）GB18030字符集"><a href="#（三）GB18030字符集" class="headerlink" title="（三）GB18030字符集"></a>（三）GB18030字符集</h2><p>GB18030包含了GBK的厕所有内容，又包含了几千个新的少数民族的文字，同时增加了CJK（China-Japan-Korea中日韩）统一汉字扩充的汉字。</p>
-<h2 id="（四）DBCS字符集"><a href="#（四）DBCS字符集" class="headerlink" title="（四）DBCS字符集"></a>（四）DBCS字符集</h2><p>GB2312、GBK、GB18030等一系列汉字编码，被统称为DBCS（双字节字符集，double byte character set）。其最大的特点是，除了ASCII码外，其他的每个字符都占两个字节的长度。</p>
-<p><strong>因此，新建一个txt文件，输入”中国ABC123”：</strong></p>
-<p><strong>以GB2312方式编码保存，它所占的大小就是10字节/byte。</strong><br><strong>以GBK方式编码保存，它所占的大小就是10字节/byte。</strong><br><strong>以GB18030方式编码保存，它所占的大小就是10字节/byte。</strong></p>
-<p><strong>新建一个txt文件，输入”中国ABC123ＡＢＣ１２３”：</strong></p>
-<p><strong>以GB2312方式编码保存，它所占的大小就是22字节/byte。</strong><br><strong>以GBK方式编码保存，它所占的大小就是22字节/byte。</strong><br><strong>以GB18030方式编码保存，它所占的大小就是22字节/byte。</strong></p>
-<h1 id="四、unicode字符集"><a href="#四、unicode字符集" class="headerlink" title="四、unicode字符集"></a>四、unicode字符集</h1><h2 id="（一）由来"><a href="#（一）由来" class="headerlink" title="（一）由来"></a>（一）由来</h2><p>unicode是为了解决传统的字符编码方案的局限性而产生的，它为每种语言的每个字符设定了统一并且唯一的二进制编码，以满足跨语言、跨平台进行文本转换、处理的请求，适应全球化的发展，便于不同语言之间的兼容交互，而ASCII码无法完成这个任务。</p>
-<h2 id="（二）特点"><a href="#（二）特点" class="headerlink" title="（二）特点"></a>（二）特点</h2><ol>
-<li><p>unicode爱是制定的社会，计算机的存储容量已经得到极大发展，空间不再成为问题。</p>
-<ul>
-<li>unicode字符集中，ISO直接规定必须用两个字节，也就是16位来统一表示所有字符（ASCII码也用两个字节来表示）；</li>
-<li>对于ASCII码中的字符，unicode保持其原编码不变，但是将其长度由原来的8位扩展为16位，而其他文化和语言的字符则全部重新统一编码；</li>
-<li>由于半角的英文符号只需要用到低8位，所以高8位永远用0来补齐，因此这种方案在保存英文文本的时候会多浪费一倍空间。</li>
-</ul>
-</li>
-<li><p>unicode是用两个字节来表示一个字符，总共可以组合出65536（256*256，2^16）种不同的字符，但还是不能表示全部汉字。</p>
-</li>
-<li><p>unicode在制定时没有考虑与任何一种现有的编码方案保持兼容，因此，GBK与unicode在汉字的内码编排上是完全不一样的，没有一种简单的算术方法可以把文本内容从unicode编码和另一种编码进行转换，这种转换必须通过查表来进行。</p>
-</li>
-</ol>
-<h2 id="（三）utf编码"><a href="#（三）utf编码" class="headerlink" title="（三）utf编码"></a>（三）utf编码</h2><p>如果没有utf编码规范（把字符集和二进制0 1对应起来），那unicode字符集就相当于一本字典，是无法在输出设备中显示出来的。</p>
-<ol>
-<li><p>实际上，对于可以用ASCII表示的字符使用unicode并不高效（因为高8位用0补齐，实际上是浪费了空间）。  </p>
-<p>为了保证在网络传输中减少不必要的流量浪费，提升文本传输速度，出现了一些中间格式的字符集，他们被称为统一的转换格式。即UTF系列编码，UTF是unicode字符集的编码方式。</p>
-</li>
-<li><p>常见的utf格式有utf-8、utf-16以及utf-32，他们的编码规则各不相同，但都是用于处理unicode字符集。</p>
-</li>
-</ol>
-<h3 id="（1）utf-16"><a href="#（1）utf-16" class="headerlink" title="（1）utf-16"></a>（1）utf-16</h3><p>utf-16中的16和unicode中的16是同一个意思，就是任何字符都用2字节（16位）来保存，因此常常将unicode和utf-16等同对待。</p>
-<ul>
-<li>utf-16编码效率高，字符到字节相互转换更简单，进行字符的操作也更简单（见到16位就是一个字符）。</li>
-<li>适合在本地磁盘和内存之间使用，可以进行字符和字节之间的快速切换，如Java的内存编码就采用utf-16编码。</li>
-<li>utf-16不够经济，如果文档中都是英文字母，那这个做法就非常浪费。对于本地存储而言，由于本地存储容量越来越大，这种浪费不是问题；但对于网络传输而言，由于网络贷款有限，使用utf-16编码会增大网络传输的流量，很没必要。</li>
-</ul>
-<p>因此，utf-16编码不适合在网络之间传输，因为网络传输很容易损坏字节流，一旦字节流损坏将很难恢复。</p>
-<h3 id="（2）utf-8"><a href="#（2）utf-8" class="headerlink" title="（2）utf-8"></a>（2）utf-8</h3><p>utf-8编码是网络传输中最常用的字符集。</p>
-<ul>
-<li><p>utf-8比utf-16解码要复杂，tf-8编码是可变字节编码；</p>
-</li>
-<li><p>utf-16是每次读取2字节（16位），而utf-8是每次读取1字节（8位），再根据字节中开头的bit标志来识别，然后确定几个字节是一个字符单元；</p>
-</li>
-<li><p>utf-8字符集中，原unicode前128个字符是单字节编码，编号在128-2047的是双字节编码，编号在2048之后的是三字节编码</p>
-<ul>
-<li>如果第一个字节都是0：一个字节代表一个字符；</li>
-<li>第一个字节的前3位是110，第2个字节的前2位是10，说明两个字节代表一个字符；</li>
-<li>第一个字节的前4位是1110，第2个字节的前2位是10，第3个字节的前2位是10，说明三个字节代表一个字符。</li>
-</ul>
-</li>
-<li><p>在utf-8文件中，ASCII码占一个字节，中文字占三个字节。</p>
-</li>
-<li><p>与utf-16相比，utf-8更适合网络传输：</p>
-<ul>
-<li>对ASCII字符集采用单字节存储，最大程度节省文件传输时的流量大小；</li>
-<li>单个字符损坏也不会影响后面的其他字符，编码安全性强；</li>
-<li>编码效率在GBK和utf-16（效率最高）之间；</li>
-</ul>
-<p>因此utf-8是目前最理想的中文编码方式。</p>
-</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/04/ASCII-GBK-unicode-UTF/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-py爬虫笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/01/py爬虫笔记/">py爬虫笔记</a>
+    <h1 class="article-title" itemprop="name">
+      py爬虫笔记
     </h1>
   
 
@@ -426,6 +280,27 @@ abcdefg123456789,/.</code></pre></li>
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -433,16 +308,84 @@ abcdefg123456789,/.</code></pre></li>
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/01/py爬虫笔记/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/01/py爬虫笔记/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2019/09/04/ASCII-GBK-unicode-UTF/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          ASCII GBK unicode UTF
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/09/01/递归与迭代/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">递归与迭代</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -462,642 +405,14 @@ abcdefg123456789,/.</code></pre></li>
 
 
 
-
   
-    <article id="post-递归与迭代" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/01/递归与迭代/">递归与迭代</a>
-    </h1>
   
 
-        
-        <a href="/2019/09/01/递归与迭代/" class="archive-article-date">
-  	<time datetime="2019-09-01T02:23:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="一、概念"><a href="#一、概念" class="headerlink" title="一、概念"></a>一、概念</h1><h2 id="（一）递归"><a href="#（一）递归" class="headerlink" title="（一）递归"></a>（一）递归</h2><p><strong>基本概念：</strong>程序调用自身称为递归，是函数自己调用自己。</p>
-<p>一个函数在其定义中直接或间接调用自身的一种方法，它通常把一个大型的复杂问题转化为一个与原问题相似的规模较小的问题，可以极大地减少代码量，递归的能力在于用有限的语句来定义对象的无限集合。</p>
-<p><strong>注意事项：</strong></p>
-<p>（1）递归就是在过程或者函数内部调用自身；<br>（2）使用递归时，必须有一个明确的递归结束条件，称为递归出口。</p>
-<p><strong>递归的两个阶段：</strong></p>
-<p>（1）递推：把复杂问题的求解 推到 比原问题简单一些的问题的求解；<br>（2）回归：当获得最简单的情况后，逐步返回，依次得到复杂的解。</p>
-<p><strong>适用问题：</strong></p>
-<p>背包问题，汉诺塔问题，菲波那切数列等。</p>
-<p><strong>缺点：</strong></p>
-<p>由于递归引起一系列的函数调用，并且有可能会有一系列的重复计算，递归算法的执行效率相对较低。</p>
-<h2 id="（二）迭代"><a href="#（二）迭代" class="headerlink" title="（二）迭代"></a>（二）迭代</h2><p>利用变量的原值推算出变量的新值。</p>
-<p>如果递归时自己调用自己的话，那迭代就是A不停地调用B。</p>
-<h2 id="（三）递归与迭代的对比"><a href="#（三）递归与迭代的对比" class="headerlink" title="（三）递归与迭代的对比"></a>（三）递归与迭代的对比</h2><h3 id="堆-栈-堆栈-队列"><a href="#堆-栈-堆栈-队列" class="headerlink" title="堆 栈 堆栈 队列"></a>堆 栈 堆栈 队列</h3><ol>
-<li>堆</li>
-</ol>
-<p>堆是一个可以被看作一棵树的数组对象。满足以下性质：</p>
-<ul>
-<li>堆中某个节点的值总是不大于或不小于其父节点的值；</li>
-<li>堆是一棵完全二叉树。</li>
-</ul>
-<p>将根节点最大的堆叫做最大堆或大根堆，根节点最小的堆叫做最小堆或小根堆。常见的堆由二叉堆、菲波那切堆等。</p>
-<p>堆是在程序运行时，而不是在程序编译时申请某个大小的内存空间。即动态分配内存，对其访问和堆一般内存的访问没有区别。</p>
-<p>堆是应用程序在运行时请求操作系统分配给自己的内存，一般是申请/给予的过程。</p>
-<p>堆是指应用程序运行时申请的动态内存，而栈只是一种使用堆的方法（即先进先出）。</p>
-<ol start="2">
-<li>栈</li>
-</ol>
-<p>栈又名堆栈，它是一种受限制的线性表，其限制是仅允许在表的一端进行查如何删除运算，这一端被称为栈顶，相对的，把另一端称为栈底。</p>
-<p>栈就是一个桶，后放进去的先拿出来。</p>
-<p>栈(Stack)是操作系统在建立某个进程时或者线程（在支持多线程的操作系统中是线程）为这个线程建立的存储区域，该区域具有FIFO的特性，在编译的时候可以指定需要的Stack的大小。</p>
-<ol start="3">
-<li>堆栈</li>
-</ol>
-<p><strong>注意：堆栈本身就是栈，只是换了个抽象的名字。</strong></p>
-<ol start="4">
-<li>队列</li>
-</ol>
-<p>队列是一种特殊的线性表，特殊之处在于它只允许在表的前端进行删除操作，而在表的后端进行插入操作，队列也是一种操作受限制的线性表。</p>
-<p>建立顺序队列结构必须为其静态分配或动态申请一片连续的存储空间，并设置两个指针进行管理。一个是队头指针front，另一个是队尾指针rear，它指向下一个入队元素的存储位置。</p>
-<p>队列每次读取一个元素，释放一个元素，所谓的动态创建，动态释放，因而也不存在溢出等问题。</p>
-<ol start="5">
-<li>堆 栈 队列 对比</li>
-</ol>
-<p>堆是在程序运行时，而不是程序编译时，申请某个大小的内存空间。即动态分配内存，对其访问和堆一般内存的访问没有区别。一般由程序员分配释放，若程序员不释放，程序结束时可能由OS回收，分配方式类似于链表。</p>
-<p>栈由操作系统自动分配释放，存放函数的参数值、局部变量值等。</p>
-<h3 id="详细对比"><a href="#详细对比" class="headerlink" title="详细对比"></a>详细对比</h3><p>递归可以使代码更加简洁，可读性更好，但由于递归需要系统堆栈，所以空间消耗要比非递归代码要大很多。而且，如果递归深度太大，可能系统资源会不够用。</p>
-<p>往往有这样的观点：能不用递归就不用递归，递归都可以用迭代来代替（&lt;——理论上，但实际上所有的迭代都可以转换为递归，但递归不一定可以转换为迭代。）。</p>
-<p>在理论上，递归和迭代在时间复杂度方面是等价的（在不考虑函数调用开销和函数调用产生的堆栈开销），但实际上递归确实比迭代效率低。</p>
-<p>使用递归算法需要的前提条件是，当且仅当一个存在预期的收敛时，才可采用递归算法，否则，就不能采用递归算法。</p>
-<p>递归时用栈机制实现的，每深入一层，都要占去一块栈数据结区域，对嵌套层数深的一些算法，递归会力不从心，空间上会以内存崩溃而告终，而且递归也带来了大量的函数调用，这也有许多额外的时间开销。所以，在深度大的时候，递归的时空性就不好了。</p>
-<p>相反，迭代的运行时间只因循环次数增加而增加，没有什么额外的开销，空间上也没有什么增加，但缺点是不容易理解，编写复杂问题的时候比较困难。</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>递归可以将大问题化小问题，极大地减少代码量，用有限的语句定义对象的无限集合，代码更简洁清晰，可读性好；但是浪费空间，递归太深容易造成堆栈的溢出。</p>
-<p>迭代效率高，且运行时间只因循环次数增加而增加，没有什么额外的开销，空间上也没其余增加；但是不易理解，代码不够简洁，编写复杂问题时比较困难。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/01/递归与迭代/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-变量及对象存储机制（自用）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/28/变量及对象存储机制（自用）/">变量及对象存储机制（自用）</a>
-    </h1>
   
 
-        
-        <a href="/2019/08/28/变量及对象存储机制（自用）/" class="archive-article-date">
-  	<time datetime="2019-08-28T09:24:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="计算机相关组成"><a href="#计算机相关组成" class="headerlink" title="计算机相关组成"></a>计算机相关组成</h1><p>电脑主机的基本构成：主板、CPU、内存条、硬盘、声卡、显示卡、网卡、机箱、机箱电源。</p>
-<h2 id="一、CPU"><a href="#一、CPU" class="headerlink" title="一、CPU"></a>一、CPU</h2><p>CPU是中央处理单元的缩写，经常被称为处理器。负责处理、运算计算机内部的所有数据，统一指挥调度电脑的所有工作。而主板芯片则更像是心脏，控制着数据的交换。</p>
-<h2 id="二、内存"><a href="#二、内存" class="headerlink" title="二、内存"></a>二、内存</h2><p>内存是内存储器，和硬盘相比，它的输入输出速度要快得多，因为它是直接芯片集成电路存储，和电流速度差不多，而硬盘是磁盘存储。</p>
-<p>内存主要用来临时存储数据，比如电脑中调用的数据，就需要从硬盘读出，发给内存然后内存再发给CPU，可以理解成是硬盘和CPU之间的缓存，硬盘/光盘/软盘所有的都是用内存来作为桥梁的。  </p>
-<p>比如我们复制了一些东西，在没有粘贴或者粘贴没有保存的情况下，这些数据就临时存放在内存中。  </p>
-<p>内存有两个部分，一个是随机存储器（RAM），另一个是只读存储器（ROM）。</p>
-<ol>
-<li>RAM是临时存放数据用的，断电后数据丢失，所以复制了东西没有粘贴，重新启动计算机侯就无法粘贴之前的数据了；玩游戏时刚玩完游戏感觉计算机速度下降了，这就是内存被游戏数据占用了，重新启动计算机后速度恢复正常也就是内存中的RAM释放了数据。</li>
-<li>ROM是死的，删不掉，也无法覆盖其他数据主要用来存储内存厂商/型号等。</li>
-</ol>
-<p>虚拟内存一般是用在内存不足的情况下系统自动调用硬盘的空间，由于虚拟内存用的是硬盘空间，硬盘的读写速度要远远低于真正的内存，所以设置过大的虚拟内存会影响计算机的速度。</p>
-<h2 id="三、GPU"><a href="#三、GPU" class="headerlink" title="三、GPU"></a>三、GPU</h2><p>GPU服务器是基于GPU的应用于视频编解码、深度学习、科学计算等多种场景的快速、稳定、弹性的计算服务。</p>
-<p>CPU需要很强的通用性来处理各种不同的数据类型，同时又要引入大量的分支跳转和中断处理。这些都使得CPU的内部结构异常复杂。而GPU面对的则是类型高度统一的、相互无依赖的、大规模和不需要被打断的纯净的计算环境。</p>
-<p>GPU的运算速度取决于雇了多少小学生，CPU的运算速度取决于请了多么厉害的教授。教授处理复杂任务的能力是碾压小学生的，但是对于没那么复杂的任务，还是顶不住人多。当然现在的GPU也能做一些稍微复杂的工作了，相当于升级成初中生高中生的水平。但还需要CPU来把数据喂到嘴边才能开始干活，究竟还是靠CPU来管的。</p>
-<h2 id="四、硬盘-磁盘"><a href="#四、硬盘-磁盘" class="headerlink" title="四、硬盘/磁盘"></a>四、硬盘/磁盘</h2><p>磁盘是计算及主要的存储介质，可以存储大量的二进制数据，并且断电后也能保持数据不丢失。</p>
-<p>早期的计算机使用的磁盘是软盘，如今常用的磁盘是硬盘，C盘、D盘、E盘是硬盘的分区。</p>
-<h1 id="堆与栈"><a href="#堆与栈" class="headerlink" title="堆与栈"></a>堆与栈</h1><p>大多数操作系统会<strong>将内存空间分为内核空间和用户空间</strong>，而每个进程的内存空间又有如下的默认区域。</p>
-<ol>
-<li><p>栈：栈用于维护函数调用的上下文，离开栈函数就会无法实现。栈通常在用户空间的最高地址处分配，通常有数兆字节；</p>
-</li>
-<li><p>堆：用来容纳应用程序动态分配的内存区域，我们使用malloc或者new分配内存时，得到的内存来自堆里。堆通常存在于栈的下方（低地址方向），堆一般比栈大很多，可以有几十甚至数百兆字节的容量；</p>
-</li>
-<li><p>可执行文件镜像：可执行文件由装载器在装载时将可执行文件读取到内存或映射到内存；</p>
-</li>
-<li><p>保留区：保留区并不是一个单一的内存区域，而是对内存中受保护而禁止访问的内存区域的总称。例如，大多数操作系统中，极小的地址通常是不允许访问的，如NULL。（顺便提一下，我们编程的时候经常会遇到“段错误（segment fault）”或者“非法操作，该内存地址不能read/write”的错误信息，其中一个原因就是我们初始化了一个指针为NULL但是没有给它赋合理的值就开始使用它。）</p>
-</li>
-</ol>
-<p><img src="https://raw.githubusercontent.com/woodChristmas/Bblog_img/master/001%E5%A0%86%E6%A0%88.png" alt="堆与栈"></p>
-<h2 id="一、栈"><a href="#一、栈" class="headerlink" title="一、栈"></a>一、栈</h2><p>在经典的操作系统中，栈总是向下增长的，站定由称为esp的寄存器进行定位，压栈的操作是栈顶的地址减小，弹出的操作使栈顶的地址增大。栈保存了一个函数调用所需的维护信息，常常被称为堆栈帧或者活动记录。堆栈帧一般包括如下几个方面：</p>
-<ol>
-<li>函数的返回地址和参数</li>
-<li>临时变量：包括函数的非静态局部变量以及编译器自动生成的其他临时变量</li>
-<li>保存的上下文：包括在函数调用前后需要保持不变的寄存器</li>
-</ol>
-<h2 id="二、堆"><a href="#二、堆" class="headerlink" title="二、堆"></a>二、堆</h2><p><strong><em>栈上的数据在函数返回时就会被释放掉，所以无法将数据传至函数外部，而全局变量没有办法动态地产生，只能在编译的时候定义，在这种情况下，堆是唯一的选择。</em></strong> malloc是C语言中申请堆空间的函数。</p>
-<p>其实可以直接让操作系统的内核来管理进程的内存，但是每次申请内存都要经过系统调用，如果操作频繁会导致效率很低，系统性能降低。比较好的做法是程序向操作系统申请一块适当的堆空间，然后由程序的运行库根据算法管理堆空间的分配，当堆空间不够的时候再向操作系统申请堆空间。</p>
-<h3 id="（一）Linux下堆空间分配方式"><a href="#（一）Linux下堆空间分配方式" class="headerlink" title="（一）Linux下堆空间分配方式"></a>（一）Linux下堆空间分配方式</h3><p>Linux下提供两种堆空间分配方式：一个是brk()系统调用，另一个是mmap（）。</p>
-<ol>
-<li><p>brk（）的作用实际上就是设置进程数据段的结束地址，它可以扩大或缩小数据段。</p>
-</li>
-<li><p>mmap（）的前两个参数分别指定需要申请的空间的起始地址和长度，如果起始地址设为0，那么操作系统会挑选合适的起始地址。port/flags这两个参数用于设置申请的空间的权限（可读，可写，可执行）以及映射类型（文件类型，匿名空间等）。最后两个参数用于文件映射是指定文件的描述符和文件偏移。  </p>
-<p>mmap（）的作用是向操作系统申请一段虚拟空间，当这块虚拟空间可以映射到某个文件（也就是这个系统调用的最初的作用），当他不将地址空间映射到某个文件时，我们又称这块空间为匿名空间。<br>glibc的malloc 函数是这样处理用户的空间请求的：对于小于128KB的请求来说，它会在现有的堆空间里面，按照堆分配算法为它分配一块空间返回，对于大于128KB的请求来说，它会使用mmap（）函数为它分配一块匿名空间，然后在这个匿名空间中为用户分配空间。（所以问一个很常见的问题，malloc申请的内存，进程结束以后还会不会存在？ 答案是不存在）</p>
-</li>
-</ol>
-<h3 id="（二）堆分配算法"><a href="#（二）堆分配算法" class="headerlink" title="（二）堆分配算法"></a>（二）堆分配算法</h3><ol>
-<li><p>空闲链表法<br>空闲链表法是把堆中各个空闲的块按照链表的方式连接起来，当用户请求一块空间时，可以遍历整个列表，直到找到合适大小的块并且将它拆分，当用户释放空间时，将它合并到空闲链表中。</p>
-</li>
-<li><p>位图<br>核心思想就是将整个堆划分为大量的块，每个块大小相同。当用户请求内存的时候，总是分配整个块的空间给用户。<br>第一个块我们称为已分配区域的头，其余的称为已分配区域的主体。我们可以使用一个整数数组来记录块的使用情况，由于每个块只有头/主体/空闲三种状态，因此仅仅需要两位即可表示一个块，因此称为位图。<br>优点：速度快，稳定性好，容易管理。<br>缺点：容易产生碎片，浪费空间。</p>
-</li>
-<li><p>对象池<br>如果实际上在一些场合，被分配对象的大小是固定的几个值，我们可以采用对象池的方法。<br>对象池思想就是，如果每一次分配的空间大小都一样，那么就可以按照这个每次请求分配的大小作为一个单位，把整个堆空间划分为大量的小块，每次请求只要找到一个空闲的小块就可以了。</p>
-</li>
-</ol>
-<p>实际上，很多应用中，堆的分配算法往往是采取多种算法复合而成的，对于glibc来说，小于64字节的采用对象池的方法，对于大于512字节的采用最佳适配算法，对于64字节与512字节之间的，采取最佳折中策略，对于大于128kb的申请，它会直接使用mmap向操作系统申请空间。</p>
-<h1 id="进程与线程"><a href="#进程与线程" class="headerlink" title="进程与线程"></a>进程与线程</h1><p>CPU是计算机的核心，承担了所有的计算任务。</p>
-<p>操作系统是计算机的管理者，负责任务的调度，资源的分配与管理，统领整个计算机硬件。  </p>
-<p>应用程序是具有某种功能的程序，程序运行于操作系统之上。</p>
-<h2 id="一、进程"><a href="#一、进程" class="headerlink" title="一、进程"></a>一、进程</h2><h3 id="（一）概念"><a href="#（一）概念" class="headerlink" title="（一）概念"></a>（一）概念</h3><p>进程是一个具有一定独立功能的程序在一个数据集上的以此动态执行过程，是操作系统进行资源分配与调度的独立单位，是应用程序运行的载体。</p>
-<p>进程一般由程序 、数据集合和进程控制块三部分组成。程序用于描述进程要完成的功能，是控制进程执行的指令集；数据集合是程序在执行时所需要的数据和工作区；程序控制块包含进程的描述信息和控制信息，是进程存在的唯一标志。</p>
-<h3 id="（二）进程的特征"><a href="#（二）进程的特征" class="headerlink" title="（二）进程的特征"></a>（二）进程的特征</h3><p>动态性：进程是程序的一次执行过程，是临时的，有生命周期的，是动态产生、动态消亡的</p>
-<p>并发性：任何进程都可以与其他进程一起并发执行</p>
-<p>独立性：进程是系统进行资源分配与调度的一个独立单位</p>
-<p>结构性：进程有程序、数据和进程控制块三部分组成</p>
-<h2 id="二、线程"><a href="#二、线程" class="headerlink" title="二、线程"></a>二、线程</h2><p>早期的操作系统中没有线程的概念，进程是拥有资源和独立运行的最小单位，也是程序执行的最小单位。任务调度采用的是时间片轮转的抢占式调度方式，而进程是任务调度的最小单位，每个进程有各自独立的一块内存，各个进程之间内存地址相互隔离。</p>
-<p>随着计算机的发展，对CPU的要求越来越高，进程之间的切换开销较大，于是就发明了线程。<br>线程是程序执行中一个单一的顺序控制流程，是程序执行的最小单元，是处理器调度和分配的基本单元。<br>一个进程可以有一个或多个线程，各线程之间共享程序的内存空间（也就是所在进程的内存空间）。<br>一个标准的线程由线程ID、当前指令指针PC、寄存器和堆栈组成。<br>而进程由内存空间（代码，数据，进程空间，打开的文件）和一个或多个线程组成。</p>
-<h2 id="三、进程与线程的对比"><a href="#三、进程与线程的对比" class="headerlink" title="三、进程与线程的对比"></a>三、进程与线程的对比</h2><p>线程是程序执行的最小单位，而进程是操作系统分配资源的最小单位；</p>
-<p>一个进程由多个线程组成，线程是一个进程中代码的不同知性路线；</p>
-<p>进程之间相互独立，但统一进程下的各个线程之间共享程序的内存空间（包括代码段，数据集，堆等）及一些进程级的资源（如打开文件和信号等），某进程内的线程在其他进程不可见；</p>
-<p>调度与切换：线程上下文切换要比进程上下文切换快得多</p>
-<p>线程廉价，启动速度快，退出速度快，对系统资源的冲击也比较小。而且，线程彼此分享了大部分核心对象的拥有权。如果使用多重进程，不可预测，也测试困难。</p>
-<h2 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h2><p>线程和进程都是一种抽象的概念，线程是一种比进程还小的抽象，线程和进程都可用于实现并发。  </p>
-<p>早期操作系统中没有线程的概念，进程就是拥有资源和独立运行的最小单位，也是程序执行的最小单位，相当于一个进程里只有一个线程，进程本身就是线程，所以线程有时也被称为轻量级进程。</p>
-<h1 id="任务调度与并发"><a href="#任务调度与并发" class="headerlink" title="任务调度与并发"></a>任务调度与并发</h1><p>大部分操作系统的任务调度是采用时间片轮转的抢占式调度方式，也就是说一个任务执行一小段时间后强制暂停去执行下一个任务，每个任务轮流执行，任务执行的一小段时间叫做时间片，任务正在执行时的状态叫运行状态，任务执行一段时间后强制暂停去执行下一个任务，被暂停的任务就处于就绪状态，等待下一个属于它的时间片的到来。（任务的两个状态：运行状态，就绪状态）</p>
-<p>这样，每个任务都能得到执行，<strong>由于CPU的执行效率非常高，时间片非常短，在各个任务之间快速切换，给人的感觉是多个任务在“同时进行”，也就是我们所说的并发。</strong></p>
-<h1 id="变量存储与内存分配方式"><a href="#变量存储与内存分配方式" class="headerlink" title="变量存储与内存分配方式"></a>变量存储与内存分配方式</h1><h2 id="一、C语言"><a href="#一、C语言" class="headerlink" title="一、C语言"></a>一、C语言</h2><p>在C/C++中，内存分为5个区，分别是堆、栈、自由存储区、全局/静态存储区、常量存储区。</p>
-<p><strong>栈</strong>：由编译器自动地在需要的时候分配，在不需要的时候（函数执行结束后）自动清除，里面的变量通常是局部变量、函数参数等。</p>
-<p><strong>堆</strong>：也称为动态内存分配，由程序员手动完成申请和释放。由new分配的内存块，且编译器不管它们的清除、释放，要由应用程序（管理员）自己开辟和释放空间，一般一个new就要对应一个delete。如果程序员没有delete，那么在程序结束后，操作系统会自动回收。</p>
-<p><strong>自由存储区</strong>（好像一般和堆不区分？）：由malloc等分配的内存块，和堆十分相似，不过是用free而不是delete来结束其生命。<br><em>注意：如果在堆上分配了内存空间，就必须及时释放它，否则可能会导致运行的程序出现内存泄漏等错误。</em></p>
-<p><strong>全局存储区（静态存储区）</strong>：全局变量和静态变量的存储是放在一起的，初始化的全局变量和静态变量在一块区域，未初始化的全局变量和未初始化的静态变量在相邻的另一块区域。程序结束后由系统释放。在程序编译的时候就已经分配好内存了，在程序的整个生命周期都存在。</p>
-<p><strong>常量存储区</strong>：这是一块比较特殊的存储区，他们里面存放的是常量，不允许修改。</p>
-<h2 id="二、Python"><a href="#二、Python" class="headerlink" title="二、Python"></a>二、Python</h2><h3 id="（一）变量与对象"><a href="#（一）变量与对象" class="headerlink" title="（一）变量与对象"></a>（一）变量与对象</h3><p>关系如图所示：</p>
-<p>变量名  <del>——引用——</del>&gt;   对象</p>
-<ol>
-<li>变量，通过变量指针引用对象，变量指针指向具体对象的内存空间，取对象的值。</li>
-<li>对象，类型已知，每一个对象都包含一个头部信息（头部信息：类型标识符和引用计数器）  </li>
-</ol>
-<p><strong><em>注意：变量没有类型，类型术语对象（因为变量引用对象，所以类型随对象），变量引用什么类型的对象，变量就是什么类型。</em></strong></p>
-<h4 id="1）判断引用所指的对象是否相同"><a href="#1）判断引用所指的对象是否相同" class="headerlink" title="1）判断引用所指的对象是否相同"></a>1）判断引用所指的对象是否相同</h4><h5 id="①通过id（）判断"><a href="#①通过id（）判断" class="headerlink" title="①通过id（）判断"></a>①通过id（）判断</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">In [32]: var1=object</span><br><span class="line">In [33]: var2=var1</span><br><span class="line"></span><br><span class="line">In [34]: id(var1)</span><br><span class="line">Out[34]: 139697863383968</span><br><span class="line"></span><br><span class="line">In [35]: id(var2)</span><br><span class="line">Out[35]: 139697863383968</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">In [39]: a=123</span><br><span class="line">In [40]: b=a</span><br><span class="line"></span><br><span class="line">In [41]: id(a)</span><br><span class="line">Out[41]: 23242832</span><br><span class="line"></span><br><span class="line">In [42]: id(b)</span><br><span class="line">Out[42]: 23242832</span><br><span class="line"></span><br><span class="line">In [43]: a=456</span><br><span class="line"></span><br><span class="line">In [44]: id(a)</span><br><span class="line">Out[44]: 33166408</span><br><span class="line"></span><br><span class="line">In [45]: id(b)</span><br><span class="line">Out[45]: 23242832</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">In[46]: a = int</span><br><span class="line">In[47]: b = 2.0</span><br><span class="line"></span><br><span class="line">In[48]: int(b)</span><br><span class="line">Out[48]:2</span><br><span class="line"></span><br><span class="line">In[49]: a(b)</span><br><span class="line">Out[49]:2.0</span><br><span class="line"></span><br><span class="line">In[50]: id(a)</span><br><span class="line">Out[50]:140703146189280</span><br><span class="line"></span><br><span class="line">In[51]: id(int)</span><br><span class="line">Out[51]:140703146189280</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; a = 1</span><br><span class="line">&gt;&gt;&gt; b = 1</span><br><span class="line">&gt;&gt;&gt; id(a)</span><br><span class="line">140703146664592</span><br><span class="line">&gt;&gt;&gt; id(b)</span><br><span class="line">140703146664592</span><br></pre></td></tr></table></figure>
-
-<p><strong>注：id()是Python的内置函数，用于返回对象的身份，即对象的内存地址。</strong></p>
-<h4 id="②通过引用所指判断"><a href="#②通过引用所指判断" class="headerlink" title="②通过引用所指判断"></a>②通过引用所指判断</h4><p>通过is进行引用所指判断，is是用来判断两个引用所指的对象是否相同。</p>
-<p>整数：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">In [46]: a=1</span><br><span class="line">In [47]: b=1</span><br><span class="line">In [48]: print(a is b)</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
-
-<p>短字符串：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">In [49]: c=&quot;good&quot;</span><br><span class="line">In [50]: d=&quot;good&quot;</span><br><span class="line">In [51]: print(c is d)</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
-
-<p>长字符串：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">In [52]: e=&quot;very good&quot;</span><br><span class="line">In [53]: f=&quot;very good&quot;</span><br><span class="line">In [54]: print(e is f)</span><br><span class="line">False</span><br></pre></td></tr></table></figure>
-
-<p>列表：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">In [55]: g=[]</span><br><span class="line">In [56]: h=[]</span><br><span class="line">In [57]: print(g is h)</span><br><span class="line">False</span><br></pre></td></tr></table></figure>
-
-<p><strong><em>由运行结果可知：</em></strong></p>
-<ol>
-<li>Python缓存了整数和短字符串，因此每个对象在内存中只存在一份，引用所指对象就是相同的，即使使用赋值语句，也只是创造新的引用，而不是对象本身；</li>
-<li>Python没有缓存长字符串、列表及其他对象，可以有多个相同的对象，可以使用赋值语句创建出新的对象。</li>
-</ol>
-<h4 id="2）引用计数"><a href="#2）引用计数" class="headerlink" title="2）引用计数"></a>2）引用计数</h4><p>在Python中，每个对象都有指向该对象的引用总数——引用计数。<br>查看对象的引用计数：sys.getrefcount()</p>
-<ol>
-<li>普通引用</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">In [2]: import sys</span><br><span class="line"></span><br><span class="line">In [3]: a=[1,2,3]</span><br><span class="line">In [4]: getrefcount(a)</span><br><span class="line">Out[4]: 2</span><br><span class="line"></span><br><span class="line">In [5]: b=a</span><br><span class="line">In [6]: getrefcount(a)</span><br><span class="line">Out[6]: 3</span><br><span class="line">In [7]: getrefcount(b)</span><br><span class="line">Out[7]: 3</span><br></pre></td></tr></table></figure>
-
-<p><strong>注意：当时用某个引用作为参数，传递给getrefcount()时，参数世纪场创建了一个临时的引用。因此，getrefcount（）所得到的结果，比期望的多1.</strong></p>
-<ol start="2">
-<li>容器对象</li>
-</ol>
-<p>Python的一个容器对象（列表，词典等），可以包含多个对象。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">In [12]: a=[1,2,3,4,5]</span><br><span class="line">In [13]: b=a</span><br><span class="line"></span><br><span class="line">In [14]: a is b</span><br><span class="line">Out[14]: True</span><br><span class="line"></span><br><span class="line">In [15]: a[0]=6</span><br><span class="line">In [16]: a</span><br><span class="line">Out[16]: [6, 2, 3, 4, 5]</span><br><span class="line"></span><br><span class="line">In [17]: a is b</span><br><span class="line">Out[17]: True</span><br><span class="line"></span><br><span class="line">In [18]: b</span><br><span class="line">Out[18]: [6, 2, 3, 4, 5]</span><br></pre></td></tr></table></figure>
-
-<p>由此可见，容器对象中包含的并不是元素本身，而是指向各个元素对象的引用。</p>
-<p><img src="https://raw.githubusercontent.com/woodChristmas/Bblog_img/master/002%E5%AE%B9%E5%99%A8%E5%AF%B9%E8%B1%A1.png" alt="容器对象"></p>
-<ol>
-<li>引用计数增加</li>
-</ol>
-<p>对象被创建：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">In [39]: getrefcount(123)</span><br><span class="line">Out[39]: 6</span><br><span class="line"></span><br><span class="line">In [40]: n=123</span><br><span class="line"></span><br><span class="line">In [41]: getrefcount(123)</span><br><span class="line">Out[41]: 7</span><br></pre></td></tr></table></figure>
-
-<p>另外的别人被创建：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">In [42]: m=n</span><br><span class="line">In [43]: getrefcount(123)</span><br><span class="line">Out[43]: 8</span><br></pre></td></tr></table></figure>
-
-<p>作为容器对象的一个元素：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">In [44]: a=[1,12,123]</span><br><span class="line">In [45]: getrefcount(123)</span><br><span class="line">Out[45]: 9</span><br></pre></td></tr></table></figure>
-
-<p>被作为参数传递给函数：<br>foo(x)</p>
-<ol start="4">
-<li>引用计数减少</li>
-</ol>
-<p>对象的别名被显式的销毁：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">In [46]: del m</span><br><span class="line">In [47]: getrefcount(123)</span><br><span class="line">Out[47]: 8</span><br></pre></td></tr></table></figure>
-
-<p>对象的一个别名被赋值给其他对象：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">In [48]: n=456</span><br><span class="line">In [49]: getrefcount(123)</span><br><span class="line">Out[49]: 7</span><br></pre></td></tr></table></figure>
-
-<p>对象从一个窗口对象移除，或，窗口对象本身被销毁：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">In [50]: a.remove(123)</span><br><span class="line">In [51]: a</span><br><span class="line">Out[51]: [1, 12]</span><br><span class="line"></span><br><span class="line">In [52]: getrefcount(123)</span><br><span class="line">Out[52]: 6</span><br></pre></td></tr></table></figure>
-
-<p>一个本地引用离开了它的作用域，比如上面的foo(x)函数结束时，x指向的对象引用减1。</p>
-<h3 id="（二）垃圾回收"><a href="#（二）垃圾回收" class="headerlink" title="（二）垃圾回收"></a>（二）垃圾回收</h3><p>当Python中对象越来越多，占据越来越大的内存，启动垃圾回收，将没有的对象清除。</p>
-<ol>
-<li>原理</li>
-</ol>
-<p>但Python的某个对象的引用计数降为0时，说明没有任何引用指向该对象，该对象就成为要被回收的垃圾。比如某个新建对象，，被分配给某个引用，对象的引用计数变为1。如果引用被删除，对象的引用计数为0，那么该对象就可以被垃圾回收。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">In [74]: a=[321,123]</span><br><span class="line">In [75]: del a</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>解析del</li>
-</ol>
-<p>del a后，已经没有任何指向之前建立的[321,123]，该表引用计数变为0，用户不可能通过任何方式接触或者动用这个对象，当垃圾回收启动时，Python扫描到这个引用计数为0的对象，就将它所占据的内存清空。</p>
-<ol start="3">
-<li><p>注意</p>
-<ol>
-<li>垃圾回收时，Python不能进行其他的任务，频繁的垃圾回收将大大降低Python的工作效率；</li>
-<li>Python只会在特定的条件下，自动启动垃圾回收（垃圾对象少就没必要回收）；</li>
-<li>当Python运行时，会记录其中分配对象（object allocation）和取消分配对象（object deallocation）的次数。当两者的差高于某个阈值时，垃圾回收才会启动。</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">In [93]: import gc</span><br><span class="line">In [94]: gc.get_threshold()　　#gc模块中查看阈值的方法</span><br><span class="line">Out[94]: (700, 10, 10)</span><br></pre></td></tr></table></figure>
-
-<p>阈值分析：<br>700就是垃圾回收启动的阈值；<br>每10次0代垃圾回收，会配合1次1代的垃圾回收；而每10次1代的垃圾回收，才会有1次的2代垃圾回收；</p>
-</li>
-<li><p>手动启动垃圾回收：  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">In [95]: gc.collect()  #手动启动垃圾回收</span><br><span class="line">Out[95]: 2</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>何为分代回收</p>
-</li>
-</ol>
-<p>Python将所有的对象分为0、1、2三代；<br>所有的新建对象都是0代对象；<br>当某一代对象经历过垃圾回收依然存活，就被归入下一代对象。</p>
-<h3 id="（三）内存池机制"><a href="#（三）内存池机制" class="headerlink" title="（三）内存池机制"></a>（三）内存池机制</h3><p>Python中分为大内存和小内存（以256K为界限）：</p>
-<ol>
-<li>大内存用malloc进行分配；</li>
-<li>小内存使用内存池进行分配；</li>
-<li>Python的内存池（金字塔）<br>①第3层：最上层，用户对Python对象的直接操作；<br>②第1层和第2层：内存池，由Python的接口函数PyMem_Malloc实现——若请求分配的内存在1~256字节之间就使用内存池管理系统进行分配，调用malloc函数分配内存，但是每次只会分配一块大小为256K的大块内存，不会调用free函数释放内存，将该内存块留在内存池中以便下次使用。<br>③第0层：大内存——若请求分配的内存大于256K，malloc函数分配内存，free函数释放内存。<br>④第-1、-2层：操作系统进行操作。</li>
-</ol>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/28/变量及对象存储机制（自用）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Python中member-的应用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/25/Python中member-的应用/">Python中member[:]的应用（类比其他编程语言的其他情况，有待完善）</a>
-    </h1>
   
 
-        
-        <a href="/2019/08/25/Python中member-的应用/" class="archive-article-date">
-  	<time datetime="2019-08-25T12:46:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>执行如下代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">member=[1,2.0,&apos;3.0&apos;,[4,5]]</span><br><span class="line">member2=member</span><br><span class="line">member3=member[:]</span><br><span class="line">print(&quot;member:&quot;+member[2])</span><br><span class="line">print(&quot;member2:&quot;+member2[2])</span><br><span class="line">print(&quot;member3:&quot;+member3[2])</span><br><span class="line"></span><br><span class="line">member2[2]=&quot;member2修改&quot;</span><br><span class="line">print(&quot;member2修改后的member:&quot;+member[2])</span><br><span class="line">print(&quot;member2修改后的member2:&quot;+member2[2])</span><br><span class="line">print(&quot;member2修改后的member3:&quot;+member3[2])</span><br><span class="line"></span><br><span class="line">member3[2]=&quot;member3修改&quot;</span><br><span class="line">print(&quot;member3修改后的member:&quot;+member[2])</span><br><span class="line">print(&quot;member3修改后的member2:&quot;+member2[2])</span><br><span class="line">print(&quot;member3修改后的member3:&quot;+member3[2])</span><br></pre></td></tr></table></figure>
-
-<p>输出结果为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">member:3.0</span><br><span class="line">member2:3.0</span><br><span class="line">member3:3.0</span><br><span class="line">member2修改后的member:member2修改</span><br><span class="line">member2修改后的member2:member2修改</span><br><span class="line">member2修改后的member3:3.0</span><br><span class="line">member3修改后的member:member2修改</span><br><span class="line">member3修改后的member2:member2修改</span><br><span class="line">member3修改后的member3:member3修改</span><br></pre></td></tr></table></figure>
-
-<p>可见执行如下操作后<br>member2=member<br>member3=member[:]</p>
-<p>修改member2的值：</p>
-<ol>
-<li>会影响member2内相应的值</li>
-<li>会影响member内对应的值</li>
-<li>不会影响member3内对应的值</li>
-</ol>
-<p>修改member3的值：</p>
-<ol>
-<li>会影响member3内相应的值</li>
-<li>不会影响member内对应的值</li>
-<li>不会影响member3内对应的值</li>
-</ol>
-<p>由此我们得知：</p>
-<ol>
-<li><strong>member=[1,2.0,’3.0’,[4,5]]</strong><br> 申请一个内存地址，存储member list</li>
-<li><strong>member2=member</strong><br> 将member的地址给member2，member可以通过地址找到list中的值，修改member2其实就是在修改原地址内的值，也就是member内的值</li>
-<li><strong>member3=member[:]</strong><br> 将member复制了一份，存储在一个新的地址上，与member没有任何关联</li>
-</ol>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/25/Python中member-的应用/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-continue与break的用法区别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/25/continue与break的用法区别/">continue与break的用法区别</a>
-    </h1>
-  
-
-        
-        <a href="/2019/08/25/continue与break的用法区别/" class="archive-article-date">
-  	<time datetime="2019-08-25T11:40:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="break的用法"><a href="#break的用法" class="headerlink" title="break的用法"></a>break的用法</h4><p>终止当前循环，也就是说，跳出循环体，循环不再执行。<br><strong>break的效果：</strong>本次循环中break语句之后的内容不会执行，下一次循环也不再执行。</p>
-<h4 id="continue的用法"><a href="#continue的用法" class="headerlink" title="continue的用法"></a>continue的用法</h4><p>终止本轮循环，并开始下一轮循环，也就是说，只要循环条件满足，循环依然进行。<br><strong>continue的效果：</strong>本次循环中continue语句之后的内容不会执行，但下一次循环会继续执行。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/25/continue与break的用法区别/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-win10系统hexo个人博客部署" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/20/win10系统hexo个人博客部署/">win10系统hexo个人博客部署</a>
-    </h1>
-  
-
-        
-        <a href="/2019/08/20/win10系统hexo个人博客部署/" class="archive-article-date">
-  	<time datetime="2019-08-20T12:02:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<blockquote>
-<p>博客内容来自B站用户CodeSheep的视频教程，个人觉得内容很详细，所以转载过来，改成文字版。<br><a href="https://www.bilibili.com/video/av44544186" target="_blank" rel="noopener">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo</a></p>
-</blockquote>
-<hr>
-<h3 id="第一步：安装node-js"><a href="#第一步：安装node-js" class="headerlink" title="第一步：安装node.js"></a>第一步：安装node.js</h3><p>去官网下载即可，安装完成后，电脑上会有两个组件，分别是Node.js和npm包管理器。<br>可以在cmd命令行程序中查看安装的Node.js和npm的版本，代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-
-<p>如果显示版本信息，则表示已经安装成功。</p>
-<h3 id="第二步：创建个人GitHub账号，备用"><a href="#第二步：创建个人GitHub账号，备用" class="headerlink" title="第二步：创建个人GitHub账号，备用"></a>第二步：创建个人GitHub账号，备用</h3><h3 id="第三步：下载Git到本地，安装"><a href="#第三步：下载Git到本地，安装" class="headerlink" title="第三步：下载Git到本地，安装"></a>第三步：下载Git到本地，安装</h3><h3 id="第四步：全局安装hexo框架"><a href="#第四步：全局安装hexo框架" class="headerlink" title="第四步：全局安装hexo框架"></a>第四步：全局安装hexo框架</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p>安装完成后，输入如下代码，查看hexo版本：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo v</span><br></pre></td></tr></table></figure>
-
-<p>cd进入目标文件夹，在目标文件夹中建立一个空文件夹</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir blog</span><br></pre></td></tr></table></figure>
-
-<p>此时，目标文件夹下产生了一个blog文件夹，退出cmd命令行程序，在blog文件夹中右键选择git bash here（也可以不用git，用命令行程序继续操作也可以）。</p>
-<h3 id="第五步：搭建博客"><a href="#第五步：搭建博客" class="headerlink" title="第五步：搭建博客"></a>第五步：搭建博客</h3><h4 id="初始化博客"><a href="#初始化博客" class="headerlink" title="初始化博客"></a>初始化博客</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-
-<h4 id="启动博客"><a href="#启动博客" class="headerlink" title="启动博客"></a>启动博客</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p>此时hexo生成了一个地址，一般为localhost:4000,去浏览器访问该地址，发现博客已经搭建成功了，并且自动为你添加了一片Hello World的博客文章。</p>
-<h4 id="新建博客文章-文件"><a href="#新建博客文章-文件" class="headerlink" title="新建博客文章/文件"></a>新建博客文章/文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;文件名&quot;</span><br></pre></td></tr></table></figure>
-
-<p>会自动生成一个markdown格式的文件。<br><em>注意：如果自己在文件夹中右键新建文件，那么新建的文件会缺乏题头。</em></p>
-<p>根据提示的文件地址，cd进入目标文件夹,会看到生成的博客文件。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd source/_posts/</span><br></pre></td></tr></table></figure>
-
-<h4 id="编辑博客，并在本地浏览测试"><a href="#编辑博客，并在本地浏览测试" class="headerlink" title="编辑博客，并在本地浏览测试"></a>编辑博客，并在本地浏览测试</h4><p>可以使用指令打开</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim 文件名.md</span><br></pre></td></tr></table></figure>
-
-<p>也可以直接右键文件，用自己想用的编辑器打开，编辑完成后保存。</p>
-<p>再次进入blog文件夹</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ../..</span><br></pre></td></tr></table></figure>
-
-<p>执行如下代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p>刷新localhost:4000页面，发现内容已经更新。<br>Ctrl+C断开连接。</p>
-<h3 id="第六步：把博客部署到GitHub上"><a href="#第六步：把博客部署到GitHub上" class="headerlink" title="第六步：把博客部署到GitHub上"></a>第六步：把博客部署到GitHub上</h3><h4 id="建立仓库"><a href="#建立仓库" class="headerlink" title="建立仓库"></a>建立仓库</h4><p>登录个人GitHub账号，新建一个仓库，仓库名称为 <strong>个人昵称.github.io</strong>(这一点很重要！)</p>
-<p><img src="20190825164225.png" alt="新建个人仓库"></p>
-<h4 id="安装hexo部署插件"><a href="#安装hexo部署插件" class="headerlink" title="安装hexo部署插件"></a>安装hexo部署插件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
-
-<h4 id="编辑-config-yml文件"><a href="#编辑-config-yml文件" class="headerlink" title="编辑_config.yml文件"></a>编辑_config.yml文件</h4><p>打开_config.yml文件，修改Deployment配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">type: git</span><br><span class="line">repo: 仓库地址</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure>
-
-<p><strong>注意：冒号后边要有一个空格</strong></p>
-<h4 id="部署到远端"><a href="#部署到远端" class="headerlink" title="部署到远端"></a>部署到远端</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>需要登录个人的GitHub账户<br>如果报错，则设置一下git的global身份</p>
-<p>在浏览器中输入刚才设置的仓库名，发现可以通过远端访问了。</p>
-<h3 id="第七步：编辑博客"><a href="#第七步：编辑博客" class="headerlink" title="第七步：编辑博客"></a>第七步：编辑博客</h3><p>编辑完后，再次部署到远端</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<h3 id="修改皮肤主体等配置后"><a href="#修改皮肤主体等配置后" class="headerlink" title="修改皮肤主体等配置后"></a>修改皮肤主体等配置后</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/20/win10系统hexo个人博客部署/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -1120,8 +435,8 @@ abcdefg123456789,/.</code></pre></li>
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
