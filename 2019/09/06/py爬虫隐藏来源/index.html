@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Python中member[:]的应用（类比其他编程语言的其他情况，有待完善） | woodChristmas</title>
+  <title>py爬虫隐藏来源 | woodChristmas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="执行如下代码：">
+  <meta name="description" content="很多网站不欢迎爬虫程序，不希望被爬虫程序访问，因此会检查访问链接的来源，如果来源是非正常途径，就会拒绝其访问，此时，如果想让程序正常工作，需要对代码进行一定的加工，使其像是普通人通过浏览器点击。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python中member[:]的应用（类比其他编程语言的其他情况，有待完善）">
-<meta property="og:url" content="http://yoursite.com/2019/08/25/Python中member-的应用/index.html">
+<meta property="og:title" content="py爬虫隐藏来源">
+<meta property="og:url" content="http://yoursite.com/2019/09/06/py爬虫隐藏来源/index.html">
 <meta property="og:site_name" content="woodChristmas">
-<meta property="og:description" content="执行如下代码：">
+<meta property="og:description" content="很多网站不欢迎爬虫程序，不希望被爬虫程序访问，因此会检查访问链接的来源，如果来源是非正常途径，就会拒绝其访问，此时，如果想让程序正常工作，需要对代码进行一定的加工，使其像是普通人通过浏览器点击。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-10T14:50:10.174Z">
+<meta property="og:updated_time" content="2019-09-10T14:44:28.888Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python中member[:]的应用（类比其他编程语言的其他情况，有待完善）">
-<meta name="twitter:description" content="执行如下代码：">
+<meta name="twitter:title" content="py爬虫隐藏来源">
+<meta name="twitter:description" content="很多网站不欢迎爬虫程序，不希望被爬虫程序访问，因此会检查访问链接的来源，如果来源是非正常途径，就会拒绝其访问，此时，如果想让程序正常工作，需要对代码进行一定的加工，使其像是普通人通过浏览器点击。">
   
     <link rel="alternative" href="/atom.xml" title="woodChristmas" type="application/atom+xml">
   
@@ -132,53 +132,78 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Python中member-的应用" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-py爬虫隐藏来源" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Python中member[:]的应用（类比其他编程语言的其他情况，有待完善）
+      py爬虫隐藏来源
     </h1>
   
 
         
-        <a href="/2019/08/25/Python中member-的应用/" class="archive-article-date">
-  	<time datetime="2019-08-25T12:46:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-25</time>
+        <a href="/2019/09/06/py爬虫隐藏来源/" class="archive-article-date">
+  	<time datetime="2019-09-06T09:23:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-06</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>执行如下代码：</p>
+        <hr>
+<blockquote>
+<p>很多网站不欢迎爬虫程序，不希望被爬虫程序访问，因此会检查访问链接的来源，如果来源是非正常途径，就会拒绝其访问，此时，如果想让程序正常工作，需要对代码进行一定的加工，使其像是普通人通过浏览器点击。</p>
+</blockquote>
 <a id="more"></a>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">member=[1,2.0,&apos;3.0&apos;,[4,5]]</span><br><span class="line">member2=member</span><br><span class="line">member3=member[:]</span><br><span class="line">print(&quot;member:&quot;+member[2])</span><br><span class="line">print(&quot;member2:&quot;+member2[2])</span><br><span class="line">print(&quot;member3:&quot;+member3[2])</span><br><span class="line"></span><br><span class="line">member2[2]=&quot;member2修改&quot;</span><br><span class="line">print(&quot;member2修改后的member:&quot;+member[2])</span><br><span class="line">print(&quot;member2修改后的member2:&quot;+member2[2])</span><br><span class="line">print(&quot;member2修改后的member3:&quot;+member3[2])</span><br><span class="line"></span><br><span class="line">member3[2]=&quot;member3修改&quot;</span><br><span class="line">print(&quot;member3修改后的member:&quot;+member[2])</span><br><span class="line">print(&quot;member3修改后的member2:&quot;+member2[2])</span><br><span class="line">print(&quot;member3修改后的member3:&quot;+member3[2])</span><br></pre></td></tr></table></figure>
+<h2 id="一、情况一"><a href="#一、情况一" class="headerlink" title="一、情况一"></a>一、情况一</h2><p>服务器一般检查链接的headers中的User-Agent来判断是代码访问还是浏览器访问，如果用Python访问，其默认的User-Agent是Python+版本号，会被拒绝访问，因此，可以通过修改headers来模拟浏览器访问。</p>
+<h3 id="一-方式一"><a href="#一-方式一" class="headerlink" title="(一)方式一"></a>(一)方式一</h3><p>在Request对象生成之前，直接设置一个字典，作为一个参数传给urllib.request.Request（）的headers参数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">head = &#123;&#125;</span><br><span class="line">head[&apos;User-Agent&apos;] = &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36&quot;</span><br><span class="line"># 从network中的Headers的Request Headers里的User-Agent中复制过来</span><br><span class="line"></span><br><span class="line">req = urllib.request.Request(url,data,head)</span><br><span class="line">#代码的其他部分不变</span><br></pre></td></tr></table></figure>
 
-<p>输出结果为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">member:3.0</span><br><span class="line">member2:3.0</span><br><span class="line">member3:3.0</span><br><span class="line">member2修改后的member:member2修改</span><br><span class="line">member2修改后的member2:member2修改</span><br><span class="line">member2修改后的member3:3.0</span><br><span class="line">member3修改后的member:member2修改</span><br><span class="line">member3修改后的member2:member2修改</span><br><span class="line">member3修改后的member3:member3修改</span><br></pre></td></tr></table></figure>
+<p>注：<br><code>urllib.request.Request(url, data=None, headers={}, origin_req_host=None, unverifiable=False, method=None)</code></p>
+<p>执行代码后，在shell中输入req.headers，返回：<code>{&#39;User-agent&#39;: &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36&#39;}</code></p>
+<h3 id="二-方式二"><a href="#二-方式二" class="headerlink" title="(二)方式二"></a>(二)方式二</h3><p>在Request对象生成之后，通过add_header()方法追加headers。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">req = urllib.request.Request(url,data)</span><br><span class="line">req.add_header(&apos;User-Agent&apos;,&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36&quot;)</span><br></pre></td></tr></table></figure>
 
-<p>可见执行如下操作后<br>member2=member<br>member3=member[:]</p>
-<p>修改member2的值：</p>
-<ol>
-<li>会影响member2内相应的值</li>
-<li>会影响member内对应的值</li>
-<li>不会影响member3内对应的值</li>
-</ol>
-<p>修改member3的值：</p>
-<ol>
-<li>会影响member3内相应的值</li>
-<li>不会影响member内对应的值</li>
-<li>不会影响member3内对应的值</li>
-</ol>
-<p>由此我们得知：</p>
-<ol>
-<li><strong>member=[1,2.0,’3.0’,[4,5]]</strong><br> 申请一个内存地址，存储member list</li>
-<li><strong>member2=member</strong><br> 将member的地址给member2，member可以通过地址找到list中的值，修改member2其实就是在修改原地址内的值，也就是member内的值</li>
-<li><strong>member3=member[:]</strong><br> 将member复制了一份，存储在一个新的地址上，与member没有任何关联</li>
-</ol>
+<p>注：<code>Request.add_header(key, val)</code></p>
+<p>执行代码后，在shell中输入req.headers，返回：<code>{&#39;User-agent&#39;: &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36&#39;}</code></p>
+<h2 id="二、情况二"><a href="#二、情况二" class="headerlink" title="二、情况二"></a>二、情况二</h2><p>当爬虫程序用于批量抓取时，如批量抓取网页图片，会出现同一个IP地址短时间内对网站服务器进行连续访问的情况，如1秒钟抓取上百张图片，会对服务器带来很大压力，因此，服务器会拒绝其访问。浏览器记录每个IP的访问频率，如果在单位时间内访问频率超过一个阈值，就认为这个IP是一个爬虫程序，不管它的User-Agent是什么，返回给客户端一个验证码，而爬虫程序是无法识别、填写验证码的，也就因此被拒绝掉了。</p>
+<h3 id="（一）方法一：延迟提交时间"><a href="#（一）方法一：延迟提交时间" class="headerlink" title="（一）方法一：延迟提交时间"></a>（一）方法一：延迟提交时间</h3><p>对程序做出如下改动：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">import time #引入time模块</span><br><span class="line"></span><br><span class="line">while True:</span><br><span class="line"></span><br><span class="line">    content = input(&apos;请输入需要翻译的内容（输入&quot;q!&quot;退出程序）：&apos;)</span><br><span class="line">    if content == &apos;q!&apos;:</span><br><span class="line">        break</span><br><span class="line"></span><br><span class="line">    原有代码</span><br><span class="line"></span><br><span class="line">    time.sleep(5) #等待5秒后再次执行while循环</span><br></pre></td></tr></table></figure>
 
+<p>因此，完整代码为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">import urllib.request</span><br><span class="line">import urllib.parse</span><br><span class="line">import json</span><br><span class="line">import time</span><br><span class="line"></span><br><span class="line">while True:</span><br><span class="line"></span><br><span class="line">    content = input(&apos;请输入需要翻译的内容（输入&quot;q!&quot;退出程序）：&apos;)</span><br><span class="line">    if content == &apos;q!&apos;:</span><br><span class="line">        break</span><br><span class="line"></span><br><span class="line">    url = &quot;http://fanyi.youdao.com/translate&quot;</span><br><span class="line"></span><br><span class="line">    &apos;&apos;&apos;</span><br><span class="line">    head = &#123;&#125;</span><br><span class="line">    head[&apos;User-Agent&apos;] = &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36&quot;</span><br><span class="line">    &apos;&apos;&apos;</span><br><span class="line">    data = &#123;&#125;</span><br><span class="line">    data[&apos;i&apos;] = content</span><br><span class="line">    data[&apos;from&apos;] = &apos;AUTO&apos;</span><br><span class="line">    data[&apos;to&apos;] = &apos;AUTO&apos;</span><br><span class="line">    data[&apos;smartresult&apos;] = &apos;dict&apos;</span><br><span class="line">    data[&apos;client&apos;] = &apos;fanyideskweb&apos;</span><br><span class="line">    data[&apos;salt&apos;] = &apos;15674905852935&apos;</span><br><span class="line">    data[&apos;sign&apos;] = &apos;c8188640febb1f23191be00b65c586f9&apos;</span><br><span class="line">    data[&apos;s&apos;] = &apos;1567490585293&apos;</span><br><span class="line">    data[&apos;bv&apos;] = &apos;3a019e7d0dda4bcd253903675f2209a5&apos;</span><br><span class="line">    data[&apos;doctype&apos;] = &apos;json&apos;</span><br><span class="line">    data[&apos;version&apos;] = &apos;2.1&apos;</span><br><span class="line">    data[&apos;keyfrom&apos;] = &apos;fanyi.web&apos;</span><br><span class="line">    data[&apos;action&apos;] = &apos;FY_BY_REALTlME&apos;</span><br><span class="line"></span><br><span class="line">    data = urllib.parse.urlencode(data)</span><br><span class="line"></span><br><span class="line">    data = data.encode(&apos;utf-8&apos;)</span><br><span class="line"></span><br><span class="line">    req = urllib.request.Request(url,data)</span><br><span class="line">    req.add_header(&apos;User-Agent&apos;,&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36&quot;)</span><br><span class="line">    response = urllib.request.urlopen(req)</span><br><span class="line"></span><br><span class="line">    html = response.read()</span><br><span class="line"></span><br><span class="line">    html = html.decode(&apos;utf-8&apos;)</span><br><span class="line"></span><br><span class="line">    target = json.loads(html)</span><br><span class="line"></span><br><span class="line">    print(&quot;翻译结果为：%s&quot; %(target[&apos;translateResult&apos;][0][0][&apos;tgt&apos;]))</span><br><span class="line">    time.sleep(5)</span><br></pre></td></tr></table></figure>
+
+<p>可见，这种方法等待时间长，效率低。</p>
+<h3 id="（二）方法二：使用代理"><a href="#（二）方法二：使用代理" class="headerlink" title="（二）方法二：使用代理"></a>（二）方法二：使用代理</h3><ol>
+<li><p>设置一个字典作为参数{‘类型’:’代理IP:端口号’}<br><code>proxy_support = urllib.request.ProxyHandler({})</code><br>#ProxyHandler的意思是代理处理程序，其（）内的参数是一个字典，“类型”指的是协议类型，如http、https、ftp等。这个语句是新建一个代理Handler，设置了（）内的字典之后，这个Handler就拥有了代理IP，否则就没有代理IP。不同的Handler可以类比成用不同的方法打开url。</p>
+<p><strong>扩展：</strong><br>#构建两个代理Handler，一个有代理IP，一个没有代理IP<br>httpproxy_handler = urllib.request.ProxyHandler({“http” : “61.135.217.7:80”}<br>nullproxy_handler = urllib.request.ProxyHandler({})</p>
+<p>proxySwitch = True #定义一个代理开关</p>
+<p>#通过 urllib2.build_opener()方法使用这些代理Handler对象，创建自定义opener对象<br>#根据代理开关是否打开，使用不同的代理模式<br>if proxySwitch:<br>opener = urllib.request.build_opener(httpproxy_handler)<br>else:<br>opener = urllib.request.build_opener(nullproxy_handler)</p>
+</li>
+<li><p>定制、创建一个opener<br><code>opener = urllib.request.build_opener(proxy_support)</code><br>#build_opener()用于创建自定义Opener对象，返回的对象具有open（）方法，与urlopen（）函数的功能相同。只不过默认的urlopen（）函数没有自定义Handler，不支持验证、cookie或者其它HTTP高级功能。此前，调用urlopen（）其实就是在用默认的opener工作。<br>此外，还可以对opener进行其他的自定义处理，如加上headers等。</p>
+</li>
+<li><p>法一：安装opener<br><code>urllib.request.install_opener(opener)</code><br>#安装不同的opener对象作为urlopen()使用的全局opener。也就是说，这个代码使自定义的opener响应到全局，之后所有的，不管是opener.open()还是urlopen() 发送请求，都将使用自定义代理。</p>
+<p>法二：调用opener<br><code>opener.open(url)</code><br>这种方法直接调用opener的open（）方法，没有将opener响应到全局，如果使用urlopen()则不使用自定义代理。</p>
+</li>
+</ol>
+<p>实战及故障排查：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">import urllib.request</span><br><span class="line"></span><br><span class="line">url = &apos;https://www.whatismyip.com/&apos;</span><br><span class="line"></span><br><span class="line">proxy_support = urllib.request.ProxyHandler(&#123;&apos;http&apos;:&apos;171.35.160.179:9999&apos;&#125;)</span><br><span class="line">#建立一个Handler</span><br><span class="line"></span><br><span class="line">opener = urllib.request.build_opener(proxy_support)</span><br><span class="line">#创建一个opener</span><br><span class="line"></span><br><span class="line">urllib.request.install_opener(opener)</span><br><span class="line">#安装一个opener</span><br><span class="line">#之后就可以按照以往的形式访问了</span><br><span class="line"></span><br><span class="line">response = urllib.request.urlopen(url)</span><br><span class="line"></span><br><span class="line">html = response.read().decode(&apos;utf-8&apos;)</span><br><span class="line"></span><br><span class="line">print(html)</span><br></pre></td></tr></table></figure>
+
+<p>执行之后，报错：<br><code>urllib.error.HTTPError: HTTP Error 403: Forbidden</code></p>
+<p>因此，对User-Agent进行修改,其他代码不变，成功。</p>
+<p>方法一：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">head = &#123;&#125;</span><br><span class="line">head[&apos;User-Agent&apos;]=&apos;Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36&apos;</span><br><span class="line"></span><br><span class="line">req = urllib.request.Request(url,headers=head)</span><br><span class="line"></span><br><span class="line">response = urllib.request.urlopen(req)</span><br></pre></td></tr></table></figure>
+
+<p>方法二：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">req = urllib.request.Request(url)</span><br><span class="line">req.add_header(&apos;User-Agent&apos;,&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36&quot;)</span><br><span class="line"></span><br><span class="line">response = urllib.request.urlopen(req)</span><br></pre></td></tr></table></figure>
+
+<p>方法三：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">opener = urllib.request.build_opener(proxy_support)</span><br><span class="line">opener.addheaders = [&#123;&apos;User-Agent&apos;,&apos;Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36&apos;&#125;]</span><br><span class="line"></span><br><span class="line">urllib.request.install_opener(opener)</span><br></pre></td></tr></table></figure>
+
+<p>因此代理IP地址可能是不稳定的，而且用同一个代理IP对网站进行访问的话，频率高了可能会被拒绝，因此，对程序作出进一步调整。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">import urllib.request</span><br><span class="line">import random</span><br><span class="line"></span><br><span class="line">url = &apos;https://www.ip.cn/&apos;</span><br><span class="line"></span><br><span class="line">iplist = [&apos;60.205.202.3:3128&apos;,&apos;47.107.93.105:8000&apos;,&apos;183.234.241.105:8118&apos;,&apos;120.132.52.6:8888&apos;]</span><br><span class="line"></span><br><span class="line">proxy_support = urllib.request.ProxyHandler(&#123;&apos;http&apos;:random.choice(iplist)&#125;)</span><br><span class="line"></span><br><span class="line">opener = urllib.request.build_opener(proxy_support)</span><br><span class="line">opener.addheaders = [&#123;&apos;User-Agent&apos;,&apos;Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36&apos;&#125;]</span><br><span class="line"></span><br><span class="line">urllib.request.install_opener(opener)</span><br><span class="line"></span><br><span class="line">response = urllib.request.urlopen(url)</span><br><span class="line"></span><br><span class="line">html = response.read().decode(&apos;utf-8&apos;)</span><br><span class="line"></span><br><span class="line">print(html)</span><br></pre></td></tr></table></figure>
       
 
       
@@ -257,7 +282,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/25/Python中member-的应用/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/06/py爬虫隐藏来源/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -271,18 +296,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/08/28/变量及对象存储机制（自用）/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/09/08/Python中的str与bytes/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          变量及对象存储机制（自用）
+          Python中的str与bytes
         
       </div>
     </a>
   
   
-    <a href="/2019/08/25/continue与break的用法区别/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">continue与break的用法区别</div>
+    <a href="/2019/09/04/ASCII-GBK-unicode-UTF/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">ASCII GBK unicode UTF</div>
       <i class="icon-circle-right"></i>
     </a>
   
