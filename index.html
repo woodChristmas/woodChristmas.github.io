@@ -130,6 +130,249 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Java访问权限修饰词" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/11/Java访问权限修饰词/">Java修饰词</a>
+    </h1>
+  
+
+        
+        <a href="/2019/11/11/Java访问权限修饰词/" class="archive-article-date">
+  	<time datetime="2019-11-11T14:35:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="访问修饰符"><a href="#访问修饰符" class="headerlink" title="访问修饰符"></a>访问修饰符</h1><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>Java中，使用访问控制符来保护对类、变量、方法和构造方法的访问。包括public、protected、（default）、private。</p>
+<p>Java访问权限修饰词可以分为两部分：<strong>对类的修饰</strong>和<strong>对类成员的修饰</strong>。<br><strong>注：</strong> 方法中的局部变量不能加上访问权限修饰词。因为局部变量的有效范围是在方法内，它本身就是一个访问权限的设定，所以加入访问权限修饰词没有意义。</p>
+<ul>
+<li><strong>public：</strong> 同类、同包、子类和不同的包都可以访问；</li>
+<li><strong>protected：</strong> 同类、同包、子类可以访问，不同的包不能访问；</li>
+<li><strong>（default）：</strong> 同类、同包可以访问，子类和不同的包无法访问；</li>
+<li><strong>private：</strong> 同类可以访问，同包、子类、不同的包不能访问。</li>
+</ul>
+<p><strong>总结：</strong> </p>
+<ul>
+<li>public &gt; protected &gt; default &gt; private；</li>
+<li>同类 &gt; 同包 &gt; 子类 &gt; 不同包</li>
+</ul>
+<h2 id="对类的修饰"><a href="#对类的修饰" class="headerlink" title="对类的修饰"></a>对类的修饰</h2><ul>
+<li>每一个文件都只能有一个public类，他可以包含众多包访问权限（即默认类型）的类。（当然，public类的内部是允许有public类的，这个类可以当成一个方法来看待，所有修饰词都可以使用。</li>
+<li>public类的名称必须完全与该文件的文件名相匹配，包括大小写。</li>
+<li>文件内也可以没有public类，此时可以随时对文件命名。（但容易让人在阅读和维护代码时产生混淆）</li>
+<li><strong>不能使用private和protected这两个访问权限修饰词去修饰类。</strong></li>
+</ul>
+<h2 id="对类成员的修饰"><a href="#对类成员的修饰" class="headerlink" title="对类成员的修饰"></a>对类成员的修饰</h2><ul>
+<li>目的有两个：<ul>
+<li>设定外部可以使用和不可以使用的界限；</li>
+<li>将接口和具体实现进行分离，这样类库设计者可以更改类内部的工作方式，而不必担心会对调用者产生影响。</li>
+</ul>
+</li>
+<li>建议：类中成员的组织形式可以按照访问权限进行摆放，将public成员置于开头，接着protected、包访问权限（default）、private。这样使用者从头读起可以首先阅读最为重要的部分public（因为可以从文件外部调用它们），等到遇见作为内部实现细节的而非public成员时停止阅读。</li>
+</ul>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>Java的访问控制是停留在编译层的，也就是它不会在.class文件中留下任何痕迹，只在编译的时候进行访问控制的检查。其实，通过反射的手段，是可以访问任何包下任何类中的成员，例如，访问类的私有成员也是有可能的。</p>
+<h1 id="非访问修饰符"><a href="#非访问修饰符" class="headerlink" title="非访问修饰符"></a>非访问修饰符</h1><h2 id="介绍-1"><a href="#介绍-1" class="headerlink" title="介绍"></a>介绍</h2><p>static修饰符，用来修饰类方法和类变量；<br>final修饰符，用来修饰类、方法和变量，final修饰的类不能被继承，修饰的方法不能被继承类重新定义，修饰的变量为常量，是不可修改的；<br>abstract修饰词，用来创建抽象类和抽象方法；<br>synchronized和volatile修饰符，主要用于线程的编程。</p>
+<ul>
+<li><p>static修饰符</p>
+<ul>
+<li>静态变量：<br>static关键字用来声明独立于对象的静态变量，无论一个类实例化多少对象，它的静态变量只有一份拷贝。静态变量也被称为类变量。局部变量不能被声明为static变量。</li>
+<li>静态方法：<br>static关键字用来声明独立于对象的静态方法。静态方法不能使用类的非静态变量。静态方法从参数列表得到数据，然后计算这些数据。</li>
+</ul>
+</li>
+<li><p>final修饰符</p>
+<ul>
+<li>final变量：<br>final表示“最终的、最后的”，变量一旦赋值后，不能被重新赋值。被final修饰的实例变量必须显示指定初始值。final修饰符通常和static修饰符一起使用来创建类常量。</li>
+<li>final方法：<br>父类中的final方法可以被子类继承，但是不能被子类重写。声明final方法的主要目的是防止该方法的内容被修改。</li>
+<li>final类：<br>final类不能被继承，没有类能够继承final类的任何特性。</li>
+</ul>
+</li>
+<li><p>abstract修饰符</p>
+<ul>
+<li>抽象类：<br>抽象类不能用来实例化对象，生命抽象类的唯一目的是味蕾未来对该类进行扩充。<br>一个类不能同时被abstract和final修饰。如果一个类包含抽象方法，那么该类一定要声明为抽象类，否则将出现编译错误。<br>抽象类可以包含抽象方法和非抽象方法。</li>
+<li>抽象方法：<br>抽象方法是一种没有任何实现的方法，该方法的具体实现由子类提供；<br>抽象方法不能被声明为final和static；<br>任何继承抽象类的子类必须实现父类所有的抽象方法，除非该子类也是抽象类；<br>如果一个类包含若干抽象方法，那么该类必须声明为抽象类。抽象类可以不包含抽象方法；<br>抽象方法的声明以分号结尾。</li>
+</ul>
+</li>
+</ul>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><ol start="0">
+<li><p>修饰符：</p>
+<ol>
+<li>权限修饰符：private，default，protected，public。</li>
+<li>状态修饰符：static，final。</li>
+<li>抽象修饰符：abstract</li>
+</ol>
+</li>
+<li><p>类：</p>
+<ol>
+<li>权限修饰符：public，default（<strong>类不能用protected或private修饰</strong>）</li>
+<li>状态修饰符：final（<strong>static不能修饰类</strong>）</li>
+<li>抽象修饰符：abstract</li>
+<li>用得最多的：public</li>
+</ol>
+</li>
+<li><p>成员变量：</p>
+<ol>
+<li>权限修饰符：private，default，protected，public</li>
+<li>状态修饰符：static，final</li>
+<li>用得最多的：private</li>
+</ol>
+</li>
+<li><p>构造方法：</p>
+<ol>
+<li>权限修饰符：private，default，protected，public</li>
+<li>用得最多的：public</li>
+</ol>
+</li>
+<li><p>除此以外的组合规则：</p>
+<ol>
+<li>成员变量：public static final</li>
+<li>成员方法：public static；public abstract；public final</li>
+</ol>
+</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/11/11/Java访问权限修饰词/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-进制" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/13/进制/">进制</a>
+    </h1>
+  
+
+        
+        <a href="/2019/09/13/进制/" class="archive-article-date">
+  	<time datetime="2019-09-13T06:18:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="二进制（binary-system）"><a href="#二进制（binary-system）" class="headerlink" title="二进制（binary system）"></a>二进制（binary system）</h2><h3 id="（一）运算：逢二进一，借一当二"><a href="#（一）运算：逢二进一，借一当二" class="headerlink" title="（一）运算：逢二进一，借一当二"></a>（一）运算：逢二进一，借一当二</h3><ol>
+<li>加法<br>(1011)2+(11)2=(1110)2</li>
+<li>减法<br>(1110)2-(11)2=(1011)2</li>
+<li>例子<br>1+1=10；10+1=11；11+1=100</li>
+</ol>
+<h3 id="（二）进制转换"><a href="#（二）进制转换" class="headerlink" title="（二）进制转换"></a>（二）进制转换</h3><ol>
+<li>二进制转十进制<br>(1011)2=1*2^0+1*2^1+0*2^2+1*2^3=(11)10</li>
+<li>十进制转二进制：除以2取余，逆序排列<ol>
+<li>(89)10=(1011001)2<br>89/2=44…1<br>44/2=22…0<br>22/2=11…0<br>11/2=5…1<br>5/2=2…1<br>2/2=1…0<br>=&gt; 1011001<ol start="2">
+<li>(11)10=(1011)2<br>11/2=5…1<br>5/2=2…1<br>2/2=1…0<br>=&gt; 1011</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="八进制（Octal，OCT，O）"><a href="#八进制（Octal，OCT，O）" class="headerlink" title="八进制（Octal，OCT，O）"></a>八进制（Octal，OCT，O）</h2><p>0-7八个数字，逢8进1，<strong>一些编程语言常以数字0开始表示该数字是八进制</strong>。</p>
+<p>八进制数字与二进制数字可按位对应（八进制一位对应二进制三位（自己算算三位二进制数可以表示的数字范围和一位八进制数可以表示的数字范围就能知道）），因此常用在计算机语言中。<br>由于十六进制一位可以对应四位二进制数，因此用十六进制数来表示二进制数更方便，因此，八进制的应用不如十六进制。</p>
+<p>在今天，十六进制是更常用的编程语言，因为两个十六进制数完全可以指定一个字节（一个字节是八位二进制数，也就是两组/每组四位二进制数，四位二进制数可以表示的数字范围和和一位十六进制数可以表示的数字范围一致）。</p>
+<h2 id="十六进制（Hexadecimal）"><a href="#十六进制（Hexadecimal）" class="headerlink" title="十六进制（Hexadecimal）"></a>十六进制（Hexadecimal）</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>逢16进1，用数字0-9和字母A-F（或a-f）表示，其中，A-F/a-f表示10-15。</p>
+<p>例如，十进制数字57，在二进制中写作111001，在16进制中写作39。</p>
+<p>57/2=28…1<br>28/2=14…0<br>14/2=7…0<br>7/2=3…1<br>3/2=1…1<br>=&gt; 111001</p>
+<p>57/16=3…9<br>=&gt; 39</p>
+<p>如今16进制已经普遍应用在计算机领域，这是因为将4位二进制数花城单独的16进制数很容易，1字节/8位可以表示成2个连续的16进制数字。<br>可是，这种混合表示方法容易令人混淆，因此需要一些字首、字尾或下表来显示，表明这是16进制数字。</p>
+<h3 id="表示方法"><a href="#表示方法" class="headerlink" title="表示方法"></a>表示方法</h3><p>不同电脑系统、编程语言对于16进制数值有不同的表示方法：</p>
+<ul>
+<li>C语言、C++、shell、Python、Java语言及其他相近的语言使用字首“0x”，例如“0x5A3”代表10进制数1443。开头的“0”令解析器更容易辨认数字，而“x”则代表十六进制（如同“O”代表八进制）。在“0x”中的“x”可以使大写或者小写。</li>
+<li>还有一些其他情况，参照百度百科</li>
+</ul>
+<h3 id="进制转换"><a href="#进制转换" class="headerlink" title="进制转换"></a>进制转换</h3><ol>
+<li>十六进制转十进制<br>(130D)16=(4877)10<br>D代表13，则13*16^0+0*16^1+3*16^2+1*16^3=4877</li>
+<li>十进制转十六进制<br>4877/16=304…13(D)<br>304/16=19…0<br>19/16=1…3<br>=&gt; 130D</li>
+</ol>
+<p><strong>注：</strong><br><strong>0x表示十六进制的int型变量，如0x61表示int型的97，1*16^0+6*16^1=97（开头的“0”令解析器更容易辨认数字，而“x”则代表十六进制）；</strong><br><strong>\x表示十六进制的字符型变量，如’\x61’表示str型，ASCII码位十进制97的字符，即’a’（既然\x开头代表字符，那么最外层就一定要带上’’）</strong></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/09/13/进制/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Python中的str与bytes" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -655,75 +898,10 @@
 
 
   
-    <article id="post-win10系统hexo个人博客部署" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/20/win10系统hexo个人博客部署/">win10系统hexo个人博客部署</a>
-    </h1>
-  
-
-        
-        <a href="/2019/08/20/win10系统hexo个人博客部署/" class="archive-article-date">
-  	<time datetime="2019-08-20T12:02:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<blockquote>
-<p>博客内容来自B站用户CodeSheep的视频教程，个人觉得内容很详细，所以转载过来，改成文字版。<br><a href="https://www.bilibili.com/video/av44544186" target="_blank" rel="noopener">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo</a></p>
-</blockquote>
-<hr>
-        
-          <a class="article-more-a" href="/2019/08/20/win10系统hexo个人博客部署/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/20/win10系统hexo个人博客部署/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 
 
